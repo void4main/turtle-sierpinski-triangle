@@ -32,6 +32,7 @@ for i in range(0, n):
     tape_b = ""
 
 turtle.speed(0)
+turtle.tracer(800,800)  # Speed Up Turtle
 turtle.penup()
 turtle.goto(-400, -400)
 turtle.pendown()
