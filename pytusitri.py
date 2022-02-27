@@ -20,7 +20,7 @@ tape_b = ""
 
 n = 11
 
-for i in range(0, n):
+for i in range(n):
     for read in tape_a:
         if read == "x":
             tape_b = tape_b + x_substitude
