@@ -11,15 +11,18 @@ Start:
 x
 '''
 
+# how to substitude
 x_substitude = "y+x+y"
 y_substitude = "x-y-x"
 
-
+# initial setup
 tape_a = "x"
 tape_b = ""
 
+# number of substitutions
 n = 11
 
+# create
 for i in range(n):
     for read in tape_a:
         if read == "x":
@@ -31,12 +34,14 @@ for i in range(n):
     tape_a = tape_b
     tape_b = ""
 
+# turtle setup
 turtle.speed(0)
-turtle.tracer(800,800)  # Speed Up Turtle
+#turtle.tracer(800,800)  # Massive Turtle Speed Up
 turtle.penup()
-turtle.goto(-400, -400)
+turtle.goto(-380, -380)
 turtle.pendown()
 
+# draw
 for read in tape_a:
     if read in ["x","y"]:
         turtle.forward(3)
